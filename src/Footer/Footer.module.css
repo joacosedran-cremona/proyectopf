@@ -1,0 +1,23 @@
+.footerGen {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerIzq, .footerImg, .footerDer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerIzq {
+    align-items: flex-start;
+}
+
+.footerDer {
+    align-items: flex-end;
+}
+
+.footerIzq p, .footerDer p {
+    margin: 0;
+    padding: 0;
+}
