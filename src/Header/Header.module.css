@@ -1,10 +1,11 @@
 .contenedor {
-    position: fixed;
+    position: fixed; /* Fijo en la parte superior */
     top: 0;
+    left: 0;
     width: 100%;
     height: 65px;
-    background-color: #fff;
-    z-index: 1000;
+    background-color: white;
+    z-index: 1000; /* Asegúrate de que esté por encima de la SubNav */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,4 +84,11 @@
 
 .logo img {
     height: 30px;
+}
+
+.subNav {
+    margin-top: 90px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
 }

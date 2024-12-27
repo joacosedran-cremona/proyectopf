@@ -1,14 +1,14 @@
 import maqImg from '../IMG/otros/nsd42jps.bmp';
-import style from './Home.module.css';
+import style from './Paletizado.module.css';
 
-const Home = () => {
+const Paletizado = () => {
     return (
         <>
             <body className={style.contenedor}>
                 <div className={style.contenedorImagen}>
                     <img className={style.img} src={maqImg} alt="Creminox" />
                 </div>
-                <h2>COMPLETO</h2>
+                <h2>PALETIZADO</h2>
                 <div>
                     <div>
                         
@@ -19,4 +19,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Paletizado;
