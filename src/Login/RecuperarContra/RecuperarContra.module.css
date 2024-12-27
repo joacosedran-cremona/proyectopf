@@ -18,7 +18,7 @@
     min-height: 720px;
 }
 
-.formularioLogin
+.formularioRecuperar
 {
     background-color: #131313;
     padding: 3rem;
@@ -29,7 +29,7 @@
     height: auto;
 }
 
-.formularioLogin img
+.formularioRecuperar img
 {
     display: block;
     margin: auto;
@@ -59,15 +59,7 @@
     font-size: 14px;
 }
 
-.inputUsuario input {
-    margin-bottom: 1rem;
-    max-width: 100%;
-    width: 100rem;
-    height: 3rem;
-    border-radius: 10px;
-}
-
-.inputContraseña input {
+.inputRecuperar input {
     margin-bottom: 2.5rem;
     max-width: 100%;
     width: 100rem;
@@ -75,7 +67,7 @@
     border-radius: 10px;
 }
 
-.botonIngresar
+.botonRecuperar
 {
     background-color: #e82a31;
     padding: 1rem;
@@ -90,25 +82,10 @@
     border: none;
     color: white;
     font-weight: bold;
-    margin-bottom: 0.4rem;
 }
 
 .img
 {
     height: 6rem;
     width: auto;
-}
-
-.botonRecuperar
-{
-    list-style: none;
-}
-
-.botonRecuperar li a
-{
-    color: #b1b1b1;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 12px;
 }
