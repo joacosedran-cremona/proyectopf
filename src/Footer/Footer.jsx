@@ -1,69 +1,97 @@
 import React from 'react';
 import cremImg from '../IMG/logos/creminox-logo.png';
-import igImg from '../IMG/icons/instagram.png';
+import webImg from '../IMG/icons/web.png';
 import linkImg from '../IMG/icons/linkedin.png';
-import locImg from '../IMG/icons/ubicacion.png';
+import ubiImg from '../IMG/icons/ubicacion.png';
 import mailImg from '../IMG/icons/mail.png';
-import phoneImg from '../IMG/icons/telefono.png';
+import telImg from '../IMG/icons/telefono.png';
 import fbImg from '../IMG/icons/facebook.png';
 
 import style from './Footer.module.css';
 
 const Footer = () => {
+    const opcionesIzq = [
+        {
+            id: 1,
+            icono: ubiImg,
+            link: 'https://www.google.com/maps/place/Beron+de+Astrada+2745,+CABA,+Argentina',
+            texto: 'Beron de Astrada 2745, CABA, Argentina'
+        },
+        {
+            id: 2,
+            icono: mailImg,
+            link: 'mailto:sistemas@creminox.com',
+            texto: 'sistemas@creminox.com'
+        },
+        {
+            id: 3,
+            icono: telImg,
+            link: 'tel:+541149183944',
+            texto: '+54 11 4918 3944 / 6005'
+        }
+    ];
+
+    const opcionesDer = [
+        {
+            id: 1,
+            icono: webImg,
+            link: 'https://creminox.com',
+            texto: 'creminox.com'
+        },
+        {
+            id: 2,
+            icono: fbImg,
+            link: 'https://facebook.com/creminox',
+            texto: '/creminox'
+        },
+        {
+            id: 3,
+            icono: linkImg,
+            link: 'https://ar.linkedin.com/company/creminox',
+            texto: 'Creminox'
+        }
+    ];
+
     return (
-    <footer className={style.all}>
-        <div className={style.contenedor}>
-            <ul className={`${style.contenedor} ${style.footerIzq}`}>
-                <li>
-                    <img src={locImg} alt="Ubicación" className={style.icon} />
-                    <p>
-                        Beron de Astrada 2745 - Argentina
-                    </p>
-                </li>
-                <li>
-                    <img src={mailImg} alt="Correo" className={style.icon} />
-                    <a href="mailto:sistemas@creminox.com">sistemas@creminox.com</a>
-                </li>
-                <li>
-                    <img src={phoneImg} alt="Teléfono" className={style.icon} />
-                    <p>
-                        4319-3944
-                    </p>
-                </li>
-            </ul>
+        <footer className={style.footer}>
+            <div className={style.contenedor}>
+                
+                {/* Sección izquierda */}
+                <ul className={style.footerIzq}>
+                    {opcionesIzq.map(({ id, icono, link, texto }) => (
+                        <li key={id} className={style.item}>
+                            <img src={icono} alt={texto} className={style.icon} />
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                {texto}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
 
-            <div className={`${style.contenedor} ${style.footerImg}`}>
-            <a href="https://creminox.com" target="_blank" rel="noopener noreferrer">
-                <img src={cremImg} alt="Creminox logo" />
-            </a>
+                {/* Logo central */}
+                <div className={style.footerLogo}>
+                    <a href="https://creminox.com" target="_blank" rel="noopener noreferrer">
+                        <img src={cremImg} alt="Creminox logo" className={style.logo} />
+                    </a>
+                </div>
+
+                {/* Sección derecha */}
+                <ul className={style.footerDer}>
+                    {opcionesDer.map(({ id, icono, link, texto }) => (
+                        <li key={id} className={style.item}>
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                {texto}
+                            </a>
+                            <img src={icono} alt={texto} className={style.icon} />
+                        </li>
+                    ))}
+                </ul>
             </div>
-
-            <ul className={`${style.contenedor} ${style.footerDer}`}>
-                <li>
-                    <a href="https://www.creminox.com" target="_blank" rel="noopener noreferrer">
-                    www.creminox.com
-                    </a>
-                    <img src={linkImg} alt="Linkedin" className={style.icon} />
-                </li>
-                <li>
-                    <a href="https://facebook.com/creminox7402" target="_blank" rel="noopener noreferrer">
-                    /creminox7402
-                    </a>
-                    <img src={fbImg} alt="Facebook" className={style.icon} />
-                </li>
-                <li>
-                    <a href="https://instagram.com/Creminox" target="_blank" rel="noopener noreferrer">
-                    /Creminox
-                    </a>
-                    <img src={igImg} alt="Instagram" className={style.icon} />
-                </li>
-            </ul>
-        </div>
-        <hr/>
-        <div className={style.footerAbajo}>
-            <p>© 2024 All Rights Reserved Cremona Inoxidable</p>
-        </div>
-    </footer>
+            <hr />
+            <div className={style.footerAbajo}>
+                <p>© 2024 All Rights Reserved Cremona Inoxidable</p>
+            </div>
+        </footer>
     );
 };
 
