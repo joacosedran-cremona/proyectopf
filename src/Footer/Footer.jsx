@@ -1,11 +1,11 @@
 import React from 'react';
 import cremImg from '../IMG/logos/creminox-logo.png';
-import igImg from '../IMG/logos/instagram.png';
-import linkImg from '../IMG/logos/linkedin.png';
-import locImg from '../IMG/logos/location.png';
-import mailImg from '../IMG/logos/mail.png';
-import phoneImg from '../IMG/logos/telephone.png';
-import fbImg from '../IMG/logos/facebook.png';
+import igImg from '../IMG/icons/instagram.png';
+import linkImg from '../IMG/icons/linkedin.png';
+import locImg from '../IMG/icons/ubicacion.png';
+import mailImg from '../IMG/icons/mail.png';
+import phoneImg from '../IMG/icons/telefono.png';
+import fbImg from '../IMG/icons/facebook.png';
 
 import style from './Footer.module.css';
 

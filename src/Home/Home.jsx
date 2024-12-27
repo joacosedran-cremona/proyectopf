@@ -1,21 +1,20 @@
-import cremImg from '../IMG/logos/creminox.png';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import maqImg from '../IMG/otros/nsd42jps.bmp';
 import style from './Home.module.css';
 
 const Home = () => {
     return (
         <>
-            <Header />
             <body className={style.contenedor}>
-                <nav className={style.home}>
-                    <h5>Login</h5>
+                <div className={style.contenedorImagen}>
+                    <img className={style.img} src={maqImg} alt="Creminox" />
+                </div>
+                <h2>Ultimas Alertas</h2>
+                <div>
                     <div>
-                        <img className={style.img} src={cremImg} alt="Creminox" />
+                        
                     </div>
-                </nav>
+                </div>
             </body>
-            <Footer />
         </>
     );
 };
