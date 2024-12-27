@@ -36,16 +36,6 @@ const Home = () => {
                 <div className={style.contenedorImagen}>
                     <img className={style.img} src={maqImg} alt="Creminox" />
                 </div>
-<<<<<<< HEAD
-                <h2>COMPLETO</h2>
-                <div>
-                    <div>
-                        
-                    </div>
-                </div>
-            </body>
-        </>
-=======
             </div>
 
             {/* Título */}
@@ -71,7 +61,6 @@ const Home = () => {
             </div>
         </body>
             
->>>>>>> 046846fbc11de0ddd12f02612a1810e65efb77b3
     );
 };
 
