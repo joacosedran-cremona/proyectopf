@@ -4,7 +4,7 @@ import style from './Header.module.css';
 
 const Header = () => {
     return (
-        <header className={style.container}>
+        <header className={style.contenedor}>
             <nav className={style.navbar}>
             <ul>
                 <li><a href="#inicio">Home</a></li>
