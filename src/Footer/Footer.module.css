@@ -1,84 +1,88 @@
-.all
-{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #2C2C2C;
+    padding: 20px 0 0 0;
+    color: white;
 }
 
-.contenedor
-{
+.contenedor {
     width: 100%;
     max-width: 1920px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-height: 227px;
-    color:white;
-}
-
-.contenedor li
-{
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    max-height: 227px;
+    padding: 0 5%;
 }
 
-.contenedor a, .contenedor p
-{
-    text-decoration: none;
-    color: white;
-    padding-left: 2vh;
-    padding-right: 2vh;
-}
-
-.footerIzq, .footerImg, .footerDer {
-    padding: 5%;
+.footerIzq, .footerDer {
     display: flex;
     flex-direction: column;
-}
-
-.footerIzq
-{
-    align-items: flex-start;
-}
-
-.footerImg
-{
-    padding: 2%;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.footerImg img
-{
-    max-width: 100%;
-    height: auto;
+.footerIzq {
+    align-items: flex-start;
+    width: 30%;
 }
 
 .footerDer {
     align-items: flex-end;
+    width: 30%;
 }
 
-hr
-{
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.footerLogo img {
+    max-width: auto;
+    height: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.item img {
+    width: 20px;
+    margin-right: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+hr {
     width: 100%;
-    color:#414141;
+    border: 0;
+    border-top: 1px solid #414141;
+    margin: 2vh 0 0 0;
 }
 
-.footerAbajo
-{
+.footerAbajo {
     color: #7a7a7a;
-    font-size: 2vh;
-    padding: 1vh;
+    font-size: 12px;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
 
-.icon
-{
-    display: absolute;
+.footerAbajo p {
+    margin: 0;
+}
+
+.icon {
     max-width: 30px;
-    margin: 1vh;
+    height: auto;
+    margin: 0 1vh;
 }
