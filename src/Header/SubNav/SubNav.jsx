@@ -42,6 +42,7 @@ const SubNav = () => {
                                 alt="Punto"
                             />
                             <Link to={path}>{text}</Link>
+                            {activeId === id && <div className={style.barraSeleccionada}></div>}
                         </li>
                     ))}
                 </ul>
