@@ -39,22 +39,22 @@ const Home = () => {
             </div>
 
             {/* Título */}
-            <h2 className={style.titulo} >Últimas Alertas</h2>
+            <h2 className={style.titulo} >ÚLTIMAS ALERTAS</h2>
 
             {/* Lista de alertas */}
             <div className={style.contenedorAlertas}>
                 <ul className={style.alertasTods}>
                     {opcionesAlarma.map(({ id, nombre, descripcion, estado }) => (
                         <li key={id} className={style.alertaIndv}>
-                            <div className={style.detallesAlerta}>
+                            <a className={style.detallesAlerta} href='#'>
                                 {/* Selección de la imagen basada en el estado */}
                                 <img 
                                     src={estado === 'rojo' ? luzR : luzV} 
                                     alt={`Estado: ${estado}`} 
                                     className={style.icon} 
                                 />
-                                <p>{nombre} - {descripcion}</p>
-                            </div>
+                                {nombre} - {descripcion}
+                            </a>
                         </li>
                     ))}
                 </ul>
