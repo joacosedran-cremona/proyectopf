@@ -1,4 +1,4 @@
-.productividad {
+.prodReal {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -8,9 +8,17 @@
     border-radius: 15px;
 }
 
-.titulo {
-    text-align: left;
-    font-size: 1vw;
+.contenedorPrinc
+{
+    width: 100%;
+    display: block;
+}
+
+.contenedorPrinc h1
+{
+    width: 100%;
+    font-size: 0.8vw;
+    color: #FFAA44;
 }
 
 .tituloProductos
@@ -21,8 +29,9 @@
     justify-content: space-between;
 }
 
-.segmento {
-    height: 100%;
+.titulo {
+    text-align: left;
+    font-size: 1vw;
 }
 
 .itemLeyenda {
@@ -36,10 +45,7 @@
     margin: 4px;
 }
 
-.divisor
+.grafico
 {
-    border-top: 4px solid #ccc;
-    border-radius: 15px;
-    margin: 20px auto;
     width: 70%;
 }

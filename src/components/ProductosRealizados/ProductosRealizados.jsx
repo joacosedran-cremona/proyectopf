@@ -1,4 +1,5 @@
 import style from './ProductosRealizados.module.css';
+import grafico from "../../IMG/otros/grafico.png";
 
 const ProductosRealizados = () => {
     const productos = [
@@ -30,23 +31,25 @@ const ProductosRealizados = () => {
     ];
 
     return (
-        <div className={style.productividad}>
-            <div className={style.tituloProductos}>
-                <h2 className={style.titulo}>PRODUCTOS REALIZADOS</h2>
-                {productos.map((producto, index) => (
-                    <div key={index} className={style.itemLeyenda}>
-                        <span
-                            className={style.colorMuestra}
-                            style={{ backgroundColor: producto.color }}
-                        ></span>
-                        <p>{`${producto.nombre}`}</p>
-                    </div>
-                ))}
-                <h1></h1>
+        <div className={style.prodReal}>
+            <div className={style.contenedorPrinc}>
+                <div className={style.tituloProductos}>
+                    <h2 className={style.titulo}>PRODUCTOS REALIZADOS</h2>
+                    {productos.map((producto, index) => (
+                        <div key={index} className={style.itemLeyenda}>
+                            <span
+                                className={style.colorMuestra}
+                                style={{ backgroundColor: producto.color }}
+                            ></span>
+                            <p>{`${producto.nombre}`}</p>
+                        </div>
+                    ))}
+                </div>
+                <h1>POR PERIODO</h1>
             </div>
 
-            <div className={style.barraContainer}>
-            
+            <div className={style.grafico}>
+                    <img src={grafico} alt="grafico" />
             </div>
         </div>
     );
