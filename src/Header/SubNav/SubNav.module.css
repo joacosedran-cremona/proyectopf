@@ -21,14 +21,6 @@
     position: relative;
 }
 
-/* Para las opciones de botones dentro de la SubNav */
-.opcionesBotones {
-    display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    align-items: center; /* Centra los botones verticalmente */
-    margin: 0 auto;
-}
-
 .navLinks {
     display: flex;
     flex-direction: row;
@@ -49,7 +41,7 @@
 }
 
 .navLinks li a:hover {
-    color: #000;
+    color: #8c8c8c;
 }
 
 .itemNav {
@@ -58,6 +50,7 @@
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    position: relative; /* Necesario para posicionar la barra abajo */
 }
 
 .itemNav:hover {
@@ -67,11 +60,23 @@
 .active {
     color: green; /* Color del botón activo */
     font-weight: bold; /* Opcional: negrita */
-    text-decoration: underline; /* Opcional: subrayado */
 }
 
 .puntosNav {
     max-width: 12px;
     max-height: 12px;
     margin-right: 0.4rem;
+}
+
+/* Barra debajo del botón activo */
+.barraSeleccionada {
+    width: 187px; /* Ancho de la barra */
+    height: 5px; /* Alto de la barra */
+    background-color: white; /* Color blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    position: absolute; /* Posición absoluta para que no afecte el layout */
+    bottom: -5px; /* La barra estará pegada al fondo del item */
+    left: 50%; /* Centra la barra respecto al item */
+    transform: translateX(-50%); /* Centra la barra exactamente */
+    transition: all 0.3s ease-in-out; /* Animación de transición */
 }
