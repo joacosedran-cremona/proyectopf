@@ -1,0 +1,45 @@
+.productividad {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    background-color: #131313;
+    border-radius: 15px;
+}
+
+.titulo {
+    text-align: left;
+    font-size: 1vw;
+}
+
+.tituloProductos
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.segmento {
+    height: 100%;
+}
+
+.itemLeyenda {
+    display: flex;
+}
+
+.colorMuestra {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin: 4px;
+}
+
+.divisor
+{
+    border-top: 4px solid #ccc;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 70%;
+}

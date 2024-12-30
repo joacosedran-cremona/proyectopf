@@ -1,24 +1,38 @@
-.contenedor
-{
+.contenedor {
     margin: 133px 20px 20px 20px;
-    display: block;
-}
-
-.productividad
-{
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
-.prodDer
-{
+.seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.productividad {
+    width: 70%;
+    background-color: #131313;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.filtro {
     width: 30%;
-    height: auto;
-    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .botonesContainer {
-    margin-top: 20px;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
