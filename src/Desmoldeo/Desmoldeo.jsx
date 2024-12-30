@@ -1,17 +1,19 @@
-import maqImg from '../IMG/otros/nsd42jps.bmp';
+import Productividad from "../components/Productividad/Productividad.jsx";
+import FiltroPeriodo from "../components/FiltroPeriodo/FiltroPeriodo.jsx";
+import Botones from "../components/Botones/Exportar/Grandes/ExportarGrandes.jsx";
 import style from './Desmoldeo.module.css';
 
-const Desmoldeo = () => {
+function Desmoldeo() {
     return (
         <>
             <body className={style.contenedor}>
-                <div className={style.contenedorImagen}>
-                    <img className={style.img} src={maqImg} alt="Creminox" />
-                </div>
-                <h2>DESMOLDEO</h2>
-                <div>
-                    <div>
-                        
+                <div className={style.productividad}>
+                    <Productividad />
+                    <div className={style.prodDer}>
+                        <FiltroPeriodo />
+                        <div className={style.botonesContainer}>
+                            <Botones />
+                        </div>
                     </div>
                 </div>
             </body>
