@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Productividad from './Productividad.jsx';
 import Graficos from './Graficos.jsx';
+import Productividad from '../components/Productividad/Productividad.jsx';
+import FiltroPeriodo from '../components/FiltroPeriodo/FiltroPeriodo.jsx';
+import Botones from '../components/Botones/Exportar/Grandes/ExportarGrandes.jsx';
 import Layout from './Layout.jsx';
 import Footer from '../Footer/Footer.jsx'
 import style from './NavDatos.module.css';
@@ -102,6 +104,8 @@ const NavDatos = () => {
                     </section>
                     <section id="section2" className={style.section}>
                         <Productividad />
+                        <FiltroPeriodo />
+                        <Botones/>
                     </section>
                     <section id="section3" className={style.section}>
                         <Graficos />
