@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Productividad from '../components/Productividad/Productividad.jsx';
-import FiltroPeriodo from '../components/FiltroPeriodo/FiltroPeriodo.jsx';
-import Botones from '../components/Botones/Exportar/Grandes/ExportarGrandes.jsx';
 import Graficos from '../components/Graficos/Graficos.jsx';
 import Layout from '../components/Layout/Layout.jsx'
 import Footer from '../Footer/Footer.jsx'
@@ -82,7 +80,7 @@ const NavDatos = () => {
                 </ul>
 
                 <hr></hr>
-  
+
                     <div className={style.contenedorDatos}>
                     <p>DATOS GENERALES</p>
                         <ul className={style.datosTods}>
@@ -98,25 +96,21 @@ const NavDatos = () => {
                     </div>
             </nav>
 
-                <main className={style.sections}>
-                    <section id="section1" className={style.section}>
-                        <Layout />
-                    </section>
-                    <section id="section2" className={style.section}>
-                        <Productividad />
-                        <FiltroPeriodo />
-                        <Botones/>
-                    </section>
-                    <section id="section3" className={style.section}>
-                        <Graficos />
-                    </section>
-
+            <div className={style.sections}>
+                <section id="section1" className={style.section}>
+                    <Layout />
+                </section>
+                <section id="section2" className={style.section}>
+                    <Productividad />
+                </section>
+                <section id="section3" className={style.section}>
+                    <Graficos />
+                </section>
                 <div className={style.Footer}>
                     <Footer />
                 </div>
-
-                </main>
             </div>
+        </div>
         </>
     );
 };

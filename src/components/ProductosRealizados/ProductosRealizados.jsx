@@ -48,7 +48,7 @@ const ProductosRealizados = () => {
                 <h1>POR PERIODO</h1>
             </div>
 
-            <div className={style.grafico}>
+            <div className={style.graf}>
                     <img src={grafico} alt="grafico" />
             </div>
         </div>

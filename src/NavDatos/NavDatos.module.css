@@ -1,49 +1,41 @@
-/* Contenedor principal */
 .container {
+    margin: 133px 0 0 18rem;
     display: flex;
     flex-direction: row;
     height: 100vh;
-    margin: 0;
-    overflow: hidden; /* Evita desplazamientos dentro del contenedor */
 }
 
-/* Navegación lateral fija */
 .nav {
     position: fixed;
-    top: 113px; /* Esto asegura que el nav esté fijo debajo de cualquier posible encabezado */
+    top: 66px;
     left: 0;
     width: 18rem;
-    height: calc(100vh - 113px); /* Ajustamos la altura del nav */
+    height: calc(100vh - 66px);
     background-color: #131313;
-    padding: 20px 0;
+    padding: 50px 20px 20px 20px;
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Permite que la navegación se desplace si es necesario */
+    overflow-y: auto;
 }
 
 .nav hr {
     max-width: 15rem;
+    margin-top: 5px;
     display: block;
-    margin: auto;
-}
-/* Lista de navegación */
-.navList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-/* Elemento de la lista */
+.navList {
+    list-style: none;
+}
+
 .navItem {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .navLink {
     display: block;
-    padding: 10px 15px;
+    padding: 6px;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -59,60 +51,37 @@
     background-color: #2b2b2b;
 }
 
-/* Estilo para el elemento activo */
 .active .navLink {
     background-color: #007bff;
     color: white;
     border-color: #0056b3;
 }
 
-/* Contenedor de las secciones */
-.sections {
-    margin-left: 18rem; /* Espacio para la navegación lateral */
-    margin-top: 113px;
-    width: calc(100% - 18rem);
-    height: calc(100vh - 113px); /* Ajusta la altura para que el contenido ocupe toda la ventana */
-    overflow-y: scroll; /* Permite una sola barra de desplazamiento */
-    overflow-x: hidden; /* Evita desplazamiento horizontal */
-}
-
-/* Cada sección */
 .section {
-    height: 100vh; /* Cada sección ocupa la altura completa de la ventana */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-    background-color: #f5f5f5;
+    padding: 20px 20px 0 20px;
 }
 
-.section:nth-child(odd) {
-    background-color: #e6e6e6;
-}
-
-/* Footer */
 .footer {
-    position: fixed; /* Lo fijamos al fondo de la ventana */
-    bottom: 0;  /* Lo coloca en el fondo de la página */
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 100%;
     background-color: #131313;
     color: white;
     text-align: center;
-    z-index: 999; /* Aseguramos que esté por debajo de la navegación */
+    z-index: 999;
 }
 
 .contenedorDatos {
-    padding-right: 10px;
-    padding-left: 10px;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .contenedorDatos p {
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding: 10px;
     font-weight: bold;
     color: white;
     display: block;
@@ -137,17 +106,16 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        margin-top: 1rem;
     }
 }
 
 @media (max-width: 1432px) {
     .datosIndv {
-        flex-direction: column; /* Cambiar la dirección del flex */
-        align-items: flex-start; /* Alinea los items al inicio */
-        padding: 8px 12px; /* Reducir el padding */
-        margin-bottom: 8px; /* Reducir el margen */
-        max-height: 5.05vh; /* Ajustar la altura máxima */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+        margin-bottom: 8px;
+        max-height: 5.05vh;
     }
 
     .datosTods {

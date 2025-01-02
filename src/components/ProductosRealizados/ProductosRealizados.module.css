@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: column;
     color: #fff;
     background-color: #131313;
     border-radius: 15px;
@@ -45,7 +46,14 @@
     margin: 4px;
 }
 
-.grafico
-{
-    width: 70%;
+.graf {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graf img {
+    max-width: 100%;
+    height: auto;
 }

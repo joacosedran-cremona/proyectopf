@@ -1,17 +1,8 @@
 .contenedor {
-    margin-top: 133px;
+    margin: 133px 20px 20px 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
     justify-content: center;
     align-items: center;
-    margin-left: 20rem;
-}
-
-.sections {
-    width: calc(100% - 20rem);
-    height: calc(100vh - 113px); /* Ajusta la altura para que el contenido ocupe toda la ventana */
-    overflow-y: scroll; /* Permite una sola barra de desplazamiento */
-    overflow-x: hidden; /* Evita desplazamiento horizontal */
 }
