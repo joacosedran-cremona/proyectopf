@@ -4,10 +4,12 @@ import style from './Graficos.module.css';
 
 const Graficos = () => {
     return (
-        <>
-            <CiclosProductos />
-            <CiclosRealizados />
-        </>
+        <div classname={style.contenedor}>
+            <div className={style.sections}>
+                <CiclosProductos />
+                <CiclosRealizados />
+            </div>
+        </div>
     );
 };
 
