@@ -4,7 +4,6 @@ import webImg from '../IMG/icons/web.png';
 import linkImg from '../IMG/icons/linkedin.png';
 import ubiImg from '../IMG/icons/ubicacion.png';
 import mailImg from '../IMG/icons/mail.png';
-import telImg from '../IMG/icons/telefono.png';
 import fbImg from '../IMG/icons/facebook.png';
 
 import style from './Footer.module.css';
@@ -25,9 +24,9 @@ const Footer = () => {
         },
         {
             id: 3,
-            icono: telImg,
-            link: 'tel:+541149183944',
-            texto: '+54 11 4918 3944 / 6005'
+            icono: mailImg,
+            link: 'mailto:ingenieria@creminox.com',
+            texto: 'ingenieria@creminox.com'
         }
     ];
 
