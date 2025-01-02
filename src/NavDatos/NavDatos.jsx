@@ -48,10 +48,19 @@ const NavDatos = () => {
     const handleScrollClick = (id) => {
         const section = document.getElementById(`section${id}`);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            const offset = -110;
+            const elementPosition = section.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition + offset;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth',
+            });
+    
             setActiveSection(id);
         }
     };
+    
 
     return (
         <>
