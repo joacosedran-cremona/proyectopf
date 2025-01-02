@@ -1,7 +1,7 @@
 // Importar imágenes
-import maqImg from '../IMG/otros/nsd42jps.bmp';
 import luzR from '../IMG/semaforo/puntoRojo.png'; 
 import luzV from '../IMG/semaforo/puntoVerde.png'; 
+import LayoutHome from './Layout/LayoutHome'
 
 // Importar estilos
 import style from './Home.module.css';
@@ -32,9 +32,8 @@ const Home = () => {
     return (
         <body className={style.body}>
             <div className={style.contenedor}>
-                {/* Imagen principal */}
                 <div className={style.contenedorImagen}>
-                    <img className={style.img} src={maqImg} alt="Creminox" />
+                    <LayoutHome />
                 </div>
             </div>
 
