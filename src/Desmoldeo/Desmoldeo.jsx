@@ -12,6 +12,7 @@ function Desmoldeo() {
         <NavDatos />
         <div className={style.contenedor}>
             
+            {/* Productividad*/}
             <div className={style.seccion}>
                 <div className={style.productividad}>
                     <Productividad />
@@ -23,23 +24,9 @@ function Desmoldeo() {
                     </div>
                 </div>
             </div>
-            <div className={style.seccion}>
-                <h2>CICLOS POR PRODUCTO</h2>
-                <p>Kilos</p>
-                <p>Torres</p>
-                <h1>POR PERIODO</h1>
-            </div>
-            <div className={style.seccion}>
-                <div className={style.filtro}>
-                    <FiltroPeriodo />
-                    <div className={style.botonesContainer}>
-                        <Botones />
-                    </div>
-                </div>
-                <div className={style.productividad}>
-                    <ProductosRealizados />
-                </div>
-            </div>
+
+            {/*Grafico ciclos realizados */}
+
         </div>
         </>
 

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Graficos from './Graficos.jsx';
 import Productividad from '../components/Productividad/Productividad.jsx';
 import FiltroPeriodo from '../components/FiltroPeriodo/FiltroPeriodo.jsx';
 import Botones from '../components/Botones/Exportar/Grandes/ExportarGrandes.jsx';
-import Layout from './Layout.jsx';
+import Graficos from '../components/Graficos/Graficos.jsx';
+import Layout from '../components/Layout/Layout.jsx'
 import Footer from '../Footer/Footer.jsx'
 import style from './NavDatos.module.css';
 
