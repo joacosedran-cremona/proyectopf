@@ -58,7 +58,6 @@
 }
 
 .active {
-    color: green; /* Color del botón activo */
     font-weight: bold; /* Opcional: negrita */
 }
 
