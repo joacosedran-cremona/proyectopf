@@ -1,4 +1,3 @@
-//Imagenes
 import puntoGris from '../../IMG/semaforo/puntoGris.png';
 
 //styles
@@ -32,22 +31,25 @@ const SectorIO = () => {
         }
     ];
     return (
-        <div className={style.datosGen}>
-            {SectorIO.map(({ id, texto, dato, icono }) => (
-                <div key={id} className={style.datoList}>
-                    <div className={style.detallesDatos} href='EquipoX'>
-                        <div className={style.texto}>
-                            <h3>{texto}</h3>
-                            <h4>{dato}</h4>
+        <div className={style.datoListContainer}>
+            <h1 className={style.texto}>SECTOR IO</h1>
+            <div className={style.datosGen}>
+                {SectorIO.map(({ id, texto, dato, icono }) => (
+                    <div key={id} className={style.datoList}>
+                        <div className={style.detallesDatos} href='EquipoX'>
+                            <div className={style.texto}>
+                                <h3>{texto}</h3>
+                                <h4>{dato}</h4>
+                            </div>
+                            <img 
+                                src={icono} 
+                                alt={`Estado: ${id}`} 
+                                className={style.icon} 
+                            />
                         </div>
-                        <img 
-                            src={icono} 
-                            alt={`Estado: ${id}`} 
-                            className={style.icon} 
-                        />
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };

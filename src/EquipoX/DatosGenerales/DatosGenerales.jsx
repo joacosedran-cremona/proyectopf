@@ -37,13 +37,13 @@ const DatosGenerales = () => {
             icono: peso,
         },
         {
-            id: 6,
+            id: 5,
             texto: 'ESTADO',
             dato: '0',
             icono: estado,
         },
         {
-            id: 7,
+            id: 6,
             texto: 'TIEMPO TRANSCURRIDO',
             dato: '00:00hs',
             icono: tiempo,
@@ -53,6 +53,7 @@ const DatosGenerales = () => {
         <>
             <div className={style.datosGen}>
                 <div className={style.contenedorDatos}>
+                    <h1 className={style.texto}>DATOS GENERALES</h1>
                     <ul className={style.lista}>
                         {datosGenerales.map(({ id, texto, dato, icono }) => (
                             <li key={id} className={style.datoList}>

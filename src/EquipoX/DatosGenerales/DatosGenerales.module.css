@@ -6,6 +6,7 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    color: #D9D9D9;
 }
 
 .lista {
@@ -39,6 +40,10 @@
 
     max-width: 40px;
     max-height: 40px;
+}
+
+.contenedorDatos .texto {
+    font-size: 21px;
 }
 
 .texto h3 {

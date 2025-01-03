@@ -1,5 +1,10 @@
 //components
 import DatosGenerales from './DatosGenerales/DatosGenerales.jsx';
+import DatosGripper from './DatosGripper/DatosGripper.jsx';
+import DatosTorre from './DatosTorre/DatosTorre.jsx';
+import DatosKuka from './DatosKuka/DatosKuka.jsx';
+import DatosSDDA from './DatosSDDA/DatosSDDA.jsx';
+import EquipoXImg from './EquipoXImg/EquipoXImg.jsx';
 import SectorIO from './SectorIO/SectorIO.jsx';
 
 import style from './EquipoX.module.css';
@@ -14,32 +19,14 @@ const EquipoX = () => {
                 </div>
 
                 <div className={style.Med}>
-                    <div className={style.datosGripper}>
-
-                    </div>
-
-                    
-                    <div className={style.kuka}>
-
-                    </div>
-
-                    
-                    <div className={style.datosSDDA}>
-
-                    </div>
-                    
-                    
-                    <div className={style.datosTorre}>
-
-                    </div>
+                    <DatosGripper />
+                    <DatosKuka />
+                    <DatosSDDA />
+                    <DatosTorre />
                 </div>
 
                 <div className={style.Der}>
-                    <div>
-                        <div>
-
-                        </div>
-                    </div>
+                    <EquipoXImg />
                 </div>
             </body>
         </>

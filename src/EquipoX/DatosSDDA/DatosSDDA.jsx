@@ -1,32 +1,30 @@
-import gripper from '../../IMG/icons/gripper.png';
-
 //styles
-import style from './DatosGripper.module.css';
+import style from './DatosSDDA.module.css';
 
-const DatosGripper = () => {
-    const datosGripper = [
+const DatosSDDA = () => {
+    const datosSDDA = [
         {
             id: 1,
-            texto: 'COD. GRIPPER ACTUAL',
+            texto: 'SDDA_LONG_MM',
             dato: '0',
         },
         {
             id: 2,
-            texto: 'COD. GRIPPER PROXIMO',
+            texto: 'SDDA_VERTICAL_MM',
             dato: '0',
         },
         {
             id: 3,
-            texto: 'GRIPPERS DISPONIBLES',
-            dato: '0',
+            texto: 'SDDA NIVEL ACTUAL',
+            dato: '0/11',
         }
     ];
     return (
         <>
             <div className={style.datosGen}>
-                <h1 className={style.titulo}>DATOS GRIPPER</h1>
+                <h1 className={style.titulo}>DATOS SDDA</h1>
                 <div className={style.contenedorDatos}>
-                    {datosGripper.map(({ id, texto, dato, icono }) => (
+                    {datosSDDA.map(({ id, texto, dato, icono }) => (
                         <div key={id} className={style.datoList}>
                             <div className={style.detallesDatos}>
                                 <div className={style.texto}>
@@ -42,4 +40,4 @@ const DatosGripper = () => {
     );
 };
 
-export default DatosGripper;
+export default DatosSDDA;
