@@ -1,8 +1,8 @@
-import style from './GraficosHistoricos.module.css';
+import style from './TablaAlertas.module.css';
 import TiposAlarma from '../components/Botones/TiposAlarma/TiposAlarma.jsx';
 import Img from '../IMG/otros/tabla.png';
 
-const GraficosHistoricos = () => {
+const TablaAlertas = () => {
     return (
         <>
         <body className={style.all}>
@@ -27,4 +27,4 @@ const GraficosHistoricos = () => {
     );
 };
 
-export default GraficosHistoricos;
+export default TablaAlertas;
